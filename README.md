@@ -4,14 +4,14 @@
 
 **한국 목회자·신학생·진지한 평신도를 위한 Claude 성경연구 및 설교준비 도우미 스킬 모음**
 
-21개의 통합 설교준비 및 성경연구 스킬 · Claude.ai 웹/앱 + Claude Code CLI 동시 지원
+22개의 통합 설교준비 및 성경연구 스킬 · Claude.ai 웹/앱 + Claude Code CLI 동시 지원
 
-[![Skills](https://img.shields.io/badge/skills-21-blue)](./skills)
+[![Skills](https://img.shields.io/badge/skills-22-blue)](./skills)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 [![Claude](https://img.shields.io/badge/Claude-Skills-orange)](https://docs.claude.com)
 [![Korean](https://img.shields.io/badge/lang-한국어-red)](./README.md)
 
-[설치하기](#-빠른-설치) · [업데이트 방법](#-이미-설치하신-분들--신규-스킬-업데이트-방법) · [스킬 목록](#-스킬-목록-21개) · [사용 예시](./examples/USAGE_EXAMPLES.md) · [기여하기](./CONTRIBUTING.md)
+[설치하기](#-빠른-설치) · [업데이트 방법](#-이미-설치하신-분들--신규-스킬-업데이트-방법) · [스킬 목록](#-스킬-목록-22개) · [사용 예시](./examples/USAGE_EXAMPLES.md) · [기여하기](./CONTRIBUTING.md)
 
 </div>
 
@@ -107,19 +107,19 @@ git clone https://github.com/idoforgod/cys-claude-sermon-skills.git ~/cys-claude
 **3단계** — 글자들이 주르륵 흐르다가 마지막에 아래와 비슷한 메시지가 보이면 성공입니다.
 
 ```
-검사한 스킬:    21 / 21
-✓ 통과:        21
+검사한 스킬:    22 / 22
+✓ 통과:        22
 ✓ 모든 스킬이 정상 설치되어 있습니다.
 ```
 
-**4단계** — **Claude Code를 한 번 껐다 켜시면** 21개 sermon 스킬이 모두 활성화되어 바로 쓰실 수 있습니다.
+**4단계** — **Claude Code를 한 번 껐다 켜시면** 22개 sermon 스킬이 모두 활성화되어 바로 쓰실 수 있습니다.
 
 #### 위 한 줄이 하는 일 (이해를 돕기 위해)
 
 - `git clone ...` — GitHub에서 본 저장소 전체를 **홈 폴더 아래 `cys-claude-sermon-skills`** 라는 폴더에 받아옵니다. 홈 폴더(`~`)는 macOS에서는 `/Users/사용자이름/`, Linux는 `/home/사용자이름/`, Windows WSL은 `/home/사용자이름/`을 가리킵니다.
 - `cd ~/cys-claude-sermon-skills` — 방금 받은 폴더로 들어갑니다.
-- `bash scripts/install.sh` — `~/.claude/skills/` 자리에 21개 스킬 폴더 바로가기(심볼릭 링크)를 만들어 줍니다. **원본 파일은 저장소 폴더에 그대로 남아 있고**, Claude Code는 그 바로가기를 따라가 스킬을 읽습니다.
-- `bash scripts/verify.sh` — 21개가 모두 잘 설치됐는지 자동으로 점검합니다.
+- `bash scripts/install.sh` — `~/.claude/skills/` 자리에 22개 스킬 폴더 바로가기(심볼릭 링크)를 만들어 줍니다. **원본 파일은 저장소 폴더에 그대로 남아 있고**, Claude Code는 그 바로가기를 따라가 스킬을 읽습니다.
+- `bash scripts/verify.sh` — 22개가 모두 잘 설치됐는지 자동으로 점검합니다.
 
 > 💡 **새로운 스킬이 추가됐을 때 어떻게 받나요?** — 본 README의 [업데이트 방법](#-이미-설치하신-분들--신규-스킬-업데이트-방법) 절을 참고하세요.
 
@@ -136,7 +136,7 @@ git clone https://github.com/idoforgod/cys-claude-sermon-skills.git
 # 2단계: 받은 폴더로 들어가기
 cd cys-claude-sermon-skills
 
-# 3단계: ~/.claude/skills/ 에 21개 스킬 바로가기를 만들기
+# 3단계: ~/.claude/skills/ 에 22개 스킬 바로가기를 만들기
 bash scripts/install.sh
 
 # 4단계: 잘 설치됐는지 자동 점검
@@ -173,18 +173,18 @@ cd ~/cys-claude-sermon-skills
 bash scripts/package.sh
 ```
 
-실행하면 `dist/` 폴더에 **개별 스킬 ZIP 21개**(`sermon-*.zip`)와 **전체 묶음 1개**(`cys-claude-sermon-skills-all.zip`)가 생깁니다. 이 ZIP을 Claude.ai에 업로드하시면 됩니다.
+실행하면 `dist/` 폴더에 **개별 스킬 ZIP 22개**(`sermon-*.zip`)와 **전체 묶음 1개**(`cys-claude-sermon-skills-all.zip`)가 생깁니다. 이 ZIP을 Claude.ai에 업로드하시면 됩니다.
 
 #### 터미널을 안 쓰시는 분 — 직접 다운로드
 
 1. 본 GitHub 저장소 페이지(<https://github.com/idoforgod/cys-claude-sermon-skills>)에 접속하세요.
 2. 우측 상단의 초록색 **`Code`** 버튼을 누르고 **`Download ZIP`** 을 누르세요.
 3. 다운로드된 ZIP 파일을 두 번 클릭해 압축을 푸세요.
-4. 압축을 푼 폴더 안의 **`skills/`** 폴더에 21개의 `sermon-*` 폴더가 들어 있습니다. 각 폴더를 ZIP으로 다시 묶거나, `skills/` 폴더 자체를 Claude.ai에 업로드하시면 됩니다.
+4. 압축을 푼 폴더 안의 **`skills/`** 폴더에 22개의 `sermon-*` 폴더가 들어 있습니다. 각 폴더를 ZIP으로 다시 묶거나, `skills/` 폴더 자체를 Claude.ai에 업로드하시면 됩니다.
 
 #### Claude.ai에 업로드하는 자리
 
-- [claude.ai/projects](https://claude.ai/projects) 에서 **새 Project(프로젝트)** 를 만든 뒤 **`Add Files`** 에 ZIP을 끌어 놓으세요. 해당 Project에서 대화할 때마다 21개 스킬이 자동으로 활성화됩니다.
+- [claude.ai/projects](https://claude.ai/projects) 에서 **새 Project(프로젝트)** 를 만든 뒤 **`Add Files`** 에 ZIP을 끌어 놓으세요. 해당 Project에서 대화할 때마다 22개 스킬이 자동으로 활성화됩니다.
 - 또는 일회성으로 쓰시려면 일반 대화창에 **종이 클립 모양 아이콘** 으로 ZIP을 첨부해도 됩니다.
 
 > 💡 **모바일에서 쓰실 분** — claude.ai 웹에서 한 번 Project에 업로드해 두면, 모바일 앱에서 같은 계정으로 로그인할 때 자동으로 동기화되어 그대로 쓰실 수 있습니다.
@@ -229,7 +229,7 @@ cd ~/cys-claude-sermon-skills \
 1. **`cd ~/cys-claude-sermon-skills`** — 처음 설치 때 만들어진 폴더로 이동합니다.
 2. **`git pull`** — GitHub에서 최신 변경 사항(신규 스킬 포함)을 내려받습니다.
 3. **`bash scripts/install.sh --force`** — `~/.claude/skills/`에 새 스킬을 추가 설치합니다. `--force`는 "이미 있는 스킬은 새것으로 덮어쓰라"는 옵션이라 안전합니다(파일을 잃지 않습니다 — 스킬은 단순한 텍스트 파일이고, 본 저장소가 항상 원본을 보관하고 있습니다).
-4. **`bash scripts/verify.sh`** — 21개(또는 그 시점의 최신 개수) 모두 정상인지 자동 점검합니다.
+4. **`bash scripts/verify.sh`** — 22개(또는 그 시점의 최신 개수) 모두 정상인지 자동 점검합니다.
 
 마지막에 **`✓ 모든 스킬이 정상 설치되어 있습니다.`** 메시지가 보이면 끝입니다. **Claude Code를 한 번 껐다 켜시면** 새 스킬이 활성화됩니다.
 
@@ -306,7 +306,7 @@ cd <여기에-경로> \
 
 ---
 
-## 📚 스킬 목록 (21개)
+## 📚 스킬 목록 (22개)
 
 스킬은 **5개 카테고리**로 분류됩니다.
 
@@ -339,7 +339,7 @@ cd <여기에-경로> \
 | [`sermon-christian-history-interpreter`](./skills/sermon-christian-history-interpreter) | 성경 시대 이후 모든 역사를 기독교적 시각으로 해석 |
 | [`sermon-topic-research-multidisciplinary`](./skills/sermon-topic-research-multidisciplinary) | 11개 학문 분야 학제간 설교 주제 자료 조사 |
 
-### ✍️ 4. 설교문 작성 & 기획 (5개)
+### ✍️ 4. 설교문 작성 & 기획 (6개)
 
 | 스킬명 | 한 줄 설명 |
 |---|---|
@@ -348,6 +348,7 @@ cd <여기에-경로> \
 | [`sermon-doctrinal-planner`](./skills/sermon-doctrinal-planner) | 4단계 교리설교 기획안 자동 생성 |
 | [`sermon-calvin-style-insight`](./skills/sermon-calvin-style-insight) | 칼빈식 lectio continua 강해 설교문 작성 |
 | [`sermon-planner-52week`](./skills/sermon-planner-52week) | 키워드 1개 → 52주 연간 설교 계획 자동 생성 |
+| [`sermon-sunday-sermon`](./skills/sermon-sunday-sermon) | 주일오전예배 등 8가지 유형 설교문 .docx 완성 (본문에서 나온 웃음 설계 포함) |
 
 ### 🙏 5. 큐티 & 검증 (2개)
 
@@ -855,6 +856,19 @@ Each skill is documented in four sections — *What it is*, *When to use*, *Key 
 
 ---
 
+#### 22. `sermon-sunday-sermon`
+
+**무엇이냐 / What it is**
+- **KO** — 개혁주의 입장에서 주일오전예배·새벽기도회·1포인트·월삭기도회·목회컬럼·부흥회·헌신예배·주일설교요약 8가지 유형의 설교문과 목회 글을 개역개정으로 작성하고 .docx 파일로 완성하는 스킬.
+- **EN** — Writes finished Reformed sermons and pastoral pieces in 8 formats (Sunday morning, dawn prayer, one-point, new-month prayer, pastoral column, revival, dedication service, Sunday summary) using the KRV-Revised text, and outputs a .docx file.
+
+**핵심 기능 / Key features**
+- 해돈 로빈슨 빅 아이디어 선언·재수렴, 3대지 강해 구조, 축원 마무리 / *Haddon Robinson big idea, three-point expository structure, benediction close.*
+- 기존 설교 파일을 점검해 예화 중복 방지 / *Checks prior sermon files to avoid repeating illustrations.*
+- **웃음 설계 지침**: 주일오전예배에서 본문이 허락하는 곳에 2회 안팎, 장면 → 전환("저 모습이 바로 나구나") → 진리 선언의 나단 방식 흐름으로 웃음을 설계 / *Humor design: about two text-driven moments of laughter per Sunday morning sermon, each moving from scene → turn to self → truth (Nathan's method).*
+
+---
+
 #### 21. `sermon-audience-feedback-persona`
 
 **무엇이냐 / What it is**
@@ -1003,7 +1017,7 @@ cys-claude-sermon-skills/
 ├── CONTRIBUTING.md            기여 가이드 / Contribution guide
 ├── CODE_OF_CONDUCT.md         행동 강령 / Code of conduct
 │
-├── skills/                    21개 스킬 (개별 폴더 유지) / 21 skills, one folder each
+├── skills/                    22개 스킬 (개별 폴더 유지) / 22 skills, one folder each
 │   ├── sermon-text-analysis-multimethod/
 │   │   └── SKILL.md           스킬 본체 / Skill spec
 │   ├── sermon-audience-feedback-persona/
@@ -1054,7 +1068,7 @@ cys-claude-sermon-skills/
 
 | 폴더 / Folder | 역할 / Role | 누가 보면 좋은가 / Audience |
 |---|---|---|
-| **`skills/`** | 21개 스킬의 본체. 각 폴더에 `SKILL.md`(필수) + 선택적 `references/`·`personas/`. / *The 21 skill bundles. Each holds `SKILL.md` (required) plus optional `references/` or `personas/`.* | 모든 사용자 / *All users* |
+| **`skills/`** | 22개 스킬의 본체. 각 폴더에 `SKILL.md`(필수) + 선택적 `references/`·`personas/`. / *The 22 skill bundles. Each holds `SKILL.md` (required) plus optional `references/` or `personas/`.* | 모든 사용자 / *All users* |
 | **`docs/`** | 설치·아키텍처·트러블슈팅·FAQ 4종 심화 문서. / *Four reference docs: install, architecture, troubleshooting, FAQ.* | 도입·운영 담당 / *Adopters & maintainers* |
 | **`examples/`** | 강해·교리·QT·본문비평·검증·연간 기획·신학자 코칭 7가지 실전 시나리오. / *Seven real-world scenarios — exposition, doctrinal, QT, textual criticism, validation, annual planning, theologian coaching.* | 실제 적용을 원하는 설교자 / *Preachers ready to apply* |
 | **`scripts/`** | 설치·제거·검증·패키징·placeholder 치환 자동화 5종. / *Five automation scripts: install, uninstall, verify, package, placeholder swap.* | 터미널 사용자 / *CLI users* |

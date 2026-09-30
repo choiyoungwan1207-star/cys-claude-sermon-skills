@@ -1,6 +1,6 @@
 # 아키텍처 — 스킬 간 관계도
 
-본 문서는 21개 sermon skill이 **어떤 영역을 분담**하고 **어떻게 서로 연결**되는지를 설명합니다.
+본 문서는 22개 sermon skill이 **어떤 영역을 분담**하고 **어떻게 서로 연결**되는지를 설명합니다.
 
 ---
 
@@ -64,6 +64,7 @@
    sermon-doctrinal-planner      (교리설교 4단계)                │
    sermon-calvin-style-insight   (강해 설교, lectio continua)    │
    sermon-qt-original-text-based (QT 형식)                       │
+   sermon-sunday-sermon          (완성 설교문 .docx, 웃음 설계)  │
         │                                                      │
         ▼                                                      │
    [검증 — 회중에게 들리는가?]                                   │
@@ -129,7 +130,7 @@ history-culture-geo-context  →  bible-history-matcher          →  christian-
 | **christian-history-interpreter** | 성경 시대 *이후* 역사 해석 | 콘스탄티누스 ~ 한국 교회사를 기독교 시각으로 |
 | **topic-research-multidisciplinary** | 현대 *11분야* 학제간 자료 | 사회·기술·산업·경제·환경·정치·국제·법·제도·심리·영성 |
 
-### 4️⃣ 설교문 작성 & 기획 (5) — 장르별
+### 4️⃣ 설교문 작성 & 기획 (6) — 장르별
 
 ```
 [입구]              topic-message-coach          (어떤 주제로 갈지 모를 때)
@@ -137,6 +138,7 @@ history-culture-geo-context  →  bible-history-matcher          →  christian-
 [교리]              doctrinal-planner            (교리 명제 → 4단계)
 [강해]              calvin-style-insight         (lectio continua)
 [글쓰기 전반]       emotive-writing-coach        (모든 장르 공통, 문장·문단·전체)
+[완성 원고]         sunday-sermon                (8가지 유형 설교문 .docx, 본문에서 나온 웃음 설계)
 ```
 
 ### 5️⃣ 큐티 & 검증 (2)
@@ -210,6 +212,7 @@ planner-52week (52주 키워드 기반 자동 생성)
 | "주제를 못 잡겠다" | `topic-message-coach` |
 | "52주 설교 계획" | `planner-52week` |
 | "설교문 다듬어줘" | `emotive-writing-coach` |
+| "주일 설교 만들어줘" / "새벽기도 말씀" / "목회컬럼 작성" | `sunday-sermon` |
 
 ---
 
